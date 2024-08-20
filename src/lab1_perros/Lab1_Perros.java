@@ -35,22 +35,24 @@ public class Lab1_Perros {
             
             listaPerros.add(nombreRaza);
             
-            System.out.println("¿Quiere ingresar otro perro? (Ingrese si/no)");
+            System.out.println("¿Quiere ingresar otro perro? (Ingrese s/n)");
             respuesta=leer.next().trim();
             
-    }while(respuesta.equalsIgnoreCase("si"));
+    }while(respuesta.equalsIgnoreCase("s"));
     
-//       if(respuesta.equals("no")){
-//                System.out.println("¿Desea salir del programa?");
-//                respuesta=leer.next().trim();
-//                if(respuesta.equals("no")){
-//                    System.out.println("ATENCIÓN! Puede agregar un perro más");
-//                    System.out.println("Ingrese raza del perro: ");
-//                    nombreRaza=leer.next();
-//            
-//                    listaPerros.add(nombreRaza);
-//                }
-//            }
+        if(respuesta.equals("n")){
+        System.out.println("¿Desea salir del programa?");
+        respuesta=leer.next().trim();
+        
+
+        if(respuesta.equals("no")){
+        System.out.println("ATENCIÓN! Puede agregar un perro más");
+        System.out.println("Ingrese raza del perro: ");
+        nombreRaza=leer.next();
+            
+        listaPerros.add(nombreRaza);
+            }
+        }
     
     
     //MOSTRAR
@@ -104,4 +106,4 @@ public class Lab1_Perros {
         }
     }
 
-}       
+}
